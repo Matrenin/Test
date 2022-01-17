@@ -1,0 +1,427 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+$red: #F16D7F;
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.header {
+    background: #222;
+
+    .header__nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+   
+    .header__left {
+        padding: 18px 0;
+    }
+
+    .header__log-left {
+        margin-right: 41px;
+    }
+
+    .header__logo-right {
+        margin-left: 33px;
+    }  
+
+    .header__right {
+        display: flex;
+        align-items: center;
+    }
+    
+    .menu__btn {
+        display: flex;
+        width: 32px;
+        height: 23px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .menu__btn-item {
+        margin: auto 0;
+        display: block;
+        width: 100%;
+        height: 3px;
+        background: #E8E8E8;
+        position: relative;
+    }
+
+    .menu__btn-item::before,
+    .menu__btn-item::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 3px;
+        left: 0;
+        position: absolute;
+        background: #E8E8E8;
+    }
+
+    .menu__btn-item::before {
+        top: 10px;
+    }
+
+    .menu__btn-item::after {
+        top: -10px;
+    }
+}
+
+  // =============MAIN============== //
+
+  .intro {
+        background: #F1E4E6;       
+        display: flex;    
+
+    .intro__img {
+        margin-left: 160px;
+    }
+    
+    .intro__box {
+        margin-top: 290px;
+        margin-left: 91px; 
+        position: relative;
+    }
+
+    .intro__box::after {
+        content: "";
+        display: block;
+        width: 12px;
+        height: 92px;
+        background: #F16D7F;
+        position: absolute;
+        left: -28px;
+        top: 0;
+        
+    }
+
+    .intro__box {
+        text-transform: uppercase;
+    }
+
+    .intro__title {
+        font-style: normal;
+        font-weight: 900;
+        font-size: 48px;
+        line-height: 58px;
+        color: #222222;
+    }
+
+    .intro__subtitle {
+        font-weight: 700px;
+        font-size: 32px;
+        line-height: 32px;
+    }
+
+    .intro__subtitle span {
+        color: #F16D7F;
+    }
+  }
+
+.merch {
+    margin-top: 65px;
+
+    .merch__block-top {
+        display: flex; 
+        justify-content: space-between;   
+    }
+
+    .merch__item {
+        width: 360px;
+        min-height: 260px;
+        background-image : url("img/Group36.png"); 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+
+    }
+
+    .merch__text-top {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #FFFFFF
+    }
+
+    .merch__text-bot {
+        color: $red;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .men {       
+        background-image : url("img/Group37.png");         
+    }
+
+    .kids {
+        background-image : url("img/Group38.png");        
+    }
+
+    .merch__block-bot {
+        margin-top: 30px;
+        background-image: url("img/Group39.png");
+        min-height: 180px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.content {
+    margin-top: 96px;
+
+    .content__title {
+        text-align: center;
+        font-size: 30px;
+        line-height: 36px;
+        color: #222222;
+    }
+
+    .content__subtitle {
+        text-align: center;
+        font-size: 14px;
+        line-height: 17px;
+        color: #9F9F9F;
+        margin-top: 6px;
+    }
+
+    .content__block {
+        margin-top: 48px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .content__item {
+        max-width: 360px;
+        margin-bottom: 50px;
+    }
+
+    .content__item-title {
+        font-size: 13px;
+        line-height: 16px;
+        color: #000000;
+        margin-top: 25px;
+        text-transform: uppercase;
+    }
+
+    .content__item-text {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        color: #5D5D5D;
+        margin-top: 12px;
+    }
+
+    .price {
+        font-size: 16px;
+        line-height: 19px;
+        color: #F16D7F;
+        margin-top: 18px;
+    }
+
+    .ground {
+        background-image: url("img/Rectangle2copy.fon.png");
+        display: flex;
+        justify-content: center;
+        min-height: 420px;
+    }
+
+    .content__btn {
+        display: flex;
+        justify-content: center;
+    }
+
+    .content__link {
+        border: 1px solid #FF6A6A;
+        padding: 14px 38px;
+        text-decoration: none;
+        font-size: 16px;
+        line-height: 19px;
+        color: #F26376;
+    }
+}
+
+.feature {
+    margin-top: 95px;
+    background: #222224;
+
+    .feature__list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .feature__item {        
+        max-width: 360px;       
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        background-repeat: no-repeat;
+        background-position: 50% 103px;
+    }
+
+    .delivery {
+        background-image: url("img/delivery.svg");       
+    }
+
+    .sale {
+        background-image: url("img/sale.svg");
+    }
+
+    .quality {
+        background-image: url("img/quality.svg");
+    }
+
+    .feature__title {
+        font-size: 19.96px;
+        line-height: 24px;
+        color: #FBFBFB;
+        padding-top: 163px;
+    }
+
+    .feature__text {
+        font-weight: 300;
+        font-size: 13.972px;
+        line-height: 17px;
+        text-align: center;
+        color: #FBFBFB;
+        margin-top: 16px;
+        padding-bottom: 105px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+.subscribe {
+    min-height: 448px;
+    background-image: url("img/photosubscribe.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    .subscribe__block {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .subscribe__left {
+        max-width: 359px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: url("img/Intersect.png");
+        background-repeat:  no-repeat;
+        background-position: 50% 97px;
+    }
+
+    .subscribe__left-text {
+        padding-top: 223px;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        color: #222224;
+    }
+
+    .subscribe__left-text span {
+        font-style: italic;
+    }
+
+    .subscribe__right {
+        margin-top: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .subscribe__title {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 43px;
+        text-align: center;
+        color: #222224;
+    }
+
+    .subscribe__subtitle {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 43px;
+    }
+
+    .subscribe__form {
+        margin-top: 32px;
+        display: flex;
+    }
+
+    .subcribe__input {
+        width: 256px;
+        min-height: 49px;
+        background: #E1E1E1;
+        padding-left: 22px;
+        font-size: 14px;
+        line-height: 17px;
+        color: #222224;
+        opacity: 0.67;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border: none;
+    }
+
+    .subcribe__btn {
+        width: 100px;
+        height: 49px;
+        margin-left: 0;
+        padding: 7px;
+        background: #F16D7F;
+        font-size: 14px;
+        line-height: 17px;
+        color: #FFFFFF;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border: none;
+    }
+}
+
+.footer {
+    background: #222224;
+
+    .footer__box {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       min-height: 79px;
+    }
+
+    .footer__text {
+        font-size: 16px;
+        line-height: 19px;
+        color: #FBFBFB;
+    }
+
+    .social__box {
+        display: flex;
+    }
+
+    .social__link {
+        width: 32px;
+        height: 32px;
+        background: #fff;
+        margin-left: 7px;
+    }
+}
