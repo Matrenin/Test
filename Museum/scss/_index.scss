@@ -1,0 +1,44 @@
+.main__gif {
+    margin: 36px auto;
+    max-width: 763px;
+    width: 100%;
+
+    & img {
+        width: 100%;
+        object-fit: contain;
+    }
+}
+
+.content {
+    max-width: 1200px;
+    width: 100%;
+    margin: 72px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+
+    & a {
+        text-decoration: none;
+        border: 1px solid #ccc;
+        padding-bottom: 12px;
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+        & img {
+            width: 100%;
+            object-fit: contain;
+        }
+
+        & h3 {
+            color: #6A3CE7;
+            padding-left: 16px;
+        }
+
+        & p {
+            color: #000;
+            padding-left: 16px;
+        }
+    }
+}

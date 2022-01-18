@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/sList.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@300&display=swap" rel="stylesheet">
+    <title>Roulette</title>
+</head>
+<body>
+    
+    <header class="header">
+        <a href="index.html">
+            <img src="img/BoS_logo.png" alt="logo" height="70">
+        </a>
+        <div class="header__box">
+            <form action="#" class="header__form">
+                <input type="checkbox" id="html-btn">
+                <label for="html-btn">html</label>
+                <div class="header__menu html">
+                    <a href="">Формы</a>
+                    <a href="">Семантика</a>
+                    <a href="">Интерактив</a>
+                    <a href="">Мета</a>
+                </div>
+            </form>
+
+            <form action="#" class="header__form">
+                <input type="checkbox" id="css-btn">
+                <label for="css-btn">css</label>
+                <div class="header__menu css">
+                    <a href="">Формы</a>
+                    <a href="">Семантика</a>
+                    <a href="">Интерактив</a>
+                    <a href="">Мета</a>
+                </div>
+            </form>
+
+            <form action="#" class="header__form">
+                <input type="checkbox" id="js-btn">
+                <label for="js-btn">js</label>
+                <div class="header__menu js">
+                    <a href="">Формы</a>
+                    <a href="">Семантика</a>
+                    <a href="">Интерактив</a>
+                    <a href="">Мета</a>
+                </div>
+            </form>
+
+            <form action="#" class="header__form">
+                <input type="checkbox" id="games-btn">
+                <label for="games-btn">games</label>
+                <div class="header__menu games">
+                    <a href="guess.html">Угадайка</a>
+                    <a href="www.html">WWW</a>
+                    <a href="blind.html">Слепая Печать</a>
+                    <a href="roulette.html">Рулетка</a>
+                    <a href="">ПДД</a>
+                </div>
+            </form>
+        </div>
+    </header>
+
+    <main>
+        <section class="roulette">
+            <h1>Игра рулетка</h1>
+            <div class="roulette__img">
+                <img src="img/kazino.jpg" alt="kazino" height="300">
+            </div>
+
+            <div id="gameBox" class="roulette__container">
+                <p id="mainText">Ваш баланс равен 1000 фишек, выберите игру: нажмите цифру 1 - для угадывания числа, нажмите цифру 2 - для угадывания цвета. Для выхода введите quit.</p>
+                <input type="text" id="game" autocomplete="off">
+                <button id="gameBtn">Выбрать</button>
+            </div>
+                
+            <div id="numberBox" class="roulette__container">
+                <p id="gameNumber">Вы выбрали угадывание числа. Выберите число от 0 до 36.</p>
+                <input type="text" id="userNumber" autocomplete="off" placeholder="число">
+                <input type="number" id="stavkaNumber" autocomplete="off" placeholder="ставка">
+                <button id="numberBtn">Выбрать</button>
+            </div>
+            
+            <div id="colorBox" class="roulette__container">
+                <p id="gameColor">Вы выбрали угадывание цвета. Выберите цвет: 1 - черное, 2 - красное.</p>
+                <input type="text" id="userColor" autocomplete="off" placeholder="цвет">
+                <input type="number" id="stavkaColor" autocomplete="off" placeholder="ставка">
+                <button id="colorBtn">Выбрать</button>
+            </div>
+
+            <p id="result">Результат: </p>
+
+            <a href="#" id="play">Играть заново</a>
+
+            <div class="balance">
+                <img src="img/fishki.png" alt="balance" height="60">
+                <p id="balance">1000</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; Ваши права защищены?</p>
+    </footer>
+
+    <script src="js/roulette.js"></script>
+
+</body>
+</html>

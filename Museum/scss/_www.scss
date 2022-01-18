@@ -1,0 +1,67 @@
+.www {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 90px auto;
+    text-align: center;
+
+    & h1 {
+        font-size: 30px;
+    }
+
+    &__img-box {
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+
+        & img {
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+
+    & p {
+        margin-top: 32px;
+    }
+
+    & input {
+        margin: 24px auto 0;
+        max-width: 180px;
+        width: 100%;
+        min-height: 30px;
+        border: none;
+        background: #F2F6F6;
+        border-bottom: 1px solid black;
+        outline: none;
+        box-sizing: border-box;
+        padding-left: 12px;
+
+        &:focus {
+            background: #fff;
+            border: none;
+            outline: 1px solid $mainColor;
+        }
+    }
+
+    & button {
+        max-width: 100px;
+        width: 100%;
+        margin: 40px auto 0;
+        border: none;
+        background: $mainColor;
+        padding: 8px 22px;
+        box-sizing: border-box;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    & a {
+        text-decoration: none;
+        margin: 40px auto 0;
+        max-width: 100px;
+        width: 100%;
+        padding: 8px 22px;
+        background: #42B745;
+        color: #000;
+    }
+}

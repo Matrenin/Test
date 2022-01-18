@@ -1,0 +1,130 @@
+main {
+    flex: 1 1 auto;
+}
+
+.web {
+    margin-top: 100px;
+
+    &__nav {
+        width: 100%;
+        background: #A4EEEB;
+        padding: 40px 0;
+    }
+
+    &__nav-box  {
+        display: flex;
+        justify-content: space-between;
+        max-width: 500px;
+        margin: 0 auto;
+        width: 100%;
+
+        & a {
+            text-decoration: none;
+            color: #000;
+            font-size: 20px;
+        }
+    }
+
+    &__content {
+        margin: 120px auto 0;
+        max-width: 1200px;
+        width: 100%;
+        justify-content: space-between;
+        display: flex;
+        height: 100%;
+        flex: 1 1 auto;
+    }
+
+    &__content-img {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+
+        & img {
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+
+    &__content-description {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-sizing: border-box;
+        padding: 50px;
+
+        & p {
+            margin-top: 28px;
+        }
+
+        & a {
+            text-decoration: none;
+            align-self: start;
+            margin-top: 12px;
+            color: #AC29F7;
+
+        }
+    }
+
+    &__mystery {
+        max-width: 900px;
+        width: 100%;
+        margin: 80px auto 0;
+
+        & h1,
+        & h3 {
+            text-align: center;
+        }
+    }
+
+    &__mystery-box {
+        margin-top: 36px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & span {
+            margin-top: 24px;
+            font-size: 16px;
+        }
+
+        & input {
+            max-width: 300px;
+            width: 100%;
+            min-height: 24px;
+            margin-top: 14px;
+            padding-left: 16px;
+            box-sizing: border-box;
+            background: #F2F6F6;
+            outline: none;
+
+            &:focus {
+                outline: 1px solid #29B8F7;
+                border: none;
+            }
+        }
+
+        & a {
+            max-width: 120px;
+            width: 100%;
+            margin: 70px auto 0;
+            text-align: center;
+            padding: 10px 18px;
+            box-sizing: border-box;
+            background: #A4EEEB;
+            color: #000;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 8px;
+        }
+    }
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background: #ccc;
+}
+
