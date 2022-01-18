@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../scss/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <title>Catalog</title>
+    <title>Cart</title>
 </head>
 <body>
     
@@ -14,7 +14,7 @@
         <div class="header__box container">   
             <div class="header__left">
                 <a href="index.html" class="header__logo">
-                    <img src="img/brand.svg" alt="header-logo" class="header__logo-left" height = "19">
+                    <img src="../img/brand.svg" alt="header-logo" class="header__logo-left" height = "19">
                 </a>                    
                 <form action="#" class="search">
                     <label for="header-search" class = "search__icon-label"></label>
@@ -114,151 +114,62 @@
     <main>
         <section class="arrival">
             <div class="arrival__box container">                
-                <h3 class="arrival__title">NEW ARRIVALS</h3>
-                <ul class="breadcrumb">
-                    <li class= "bread__list"><a href="#" class="bread__link">HOME</a></li>
-                    <li class= "bread__list"><a href="#" class="bread__link">MEN</a></li>
-                    <li class= "bread__list"><span>NEw ARRIVALS</span></li>
-                </ul>
+                <h3 class="arrival__title">SHOPPING CART</h3>            
             </div>
         </section>
 
-        <section class="content container"> 
-            <div class="content__filter">
-                <nav class="filter">
-                    <input type="checkbox" id = "switch-filter">
-                    <label for="switch-filter" class="filter__label">
-                        <span>filter</span>
-                        <svg width="15" height="10" viewBox="0 0 15 10" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0.833333 10H4.16667C4.625 10 5 9.625 5 9.16667C5 8.70833 4.625 8.33333 4.16667 8.33333H0.833333C0.375 8.33333 0 8.70833 0 9.16667C0 9.625 0.375 10 0.833333 10ZM0 0.833333C0 1.29167 0.375 1.66667 0.833333 1.66667H14.1667C14.625 1.66667 15 1.29167 15 0.833333C15 0.375 14.625 0 14.1667 0H0.833333C0.375 0 0 0.375 0 0.833333ZM0.833333 5.83333H9.16667C9.625 5.83333 10 5.45833 10 5C10 4.54167 9.625 4.16667 9.16667 4.16667H0.833333C0.375 4.16667 0 4.54167 0 5C0 5.45833 0.375 5.83333 0.833333 5.83333Z"/>
-                        </svg>                            
-                    </label>
-                    <ul class="filter__list">
-                        <li class="filter__list-item">
-                            <a href="#">category</a>
-                        </li>
-                        <ul class="filter__sublist">
-                            <li class="filter__sublist-item">
-                                <a href="#">Accessories</a>
-                            </li>
-                            <li class="filter__sublist-item">
-                                <a href="#">Bags</a>
-                            </li>
-                            <li class="filter__sublist-item">
-                                <a href="#">Denim</a>
-                            </li>
-                            <li class="filter__sublist-item">
-                                <a href="#">Hoodies & Sweatshirts</a>
-                            </li>
-                            <li class="filter__sublist-item">
-                                <a href="#">Jackets & Coats</a>
-                            </li>
-                            <li class="filter__sublist-item">
-                                <a href="#">Polos</a>
-                            </li>
-                            <li class="filter__sublist-item">
-                                <a href="#">Shirts</a>
-                            </li>
-                            <li class="filter__sublist-item">
-                                <a href="#">Shoes</a>
-                            </li>
-                            <li class="filter__sublist-item">
-                                <a href="#">Sweaters & Knits</a>
-                            </li>
-                            <li class="filter__sublist-item">
-                                <a href="#">T-Shirts</a>
-                            </li>
-                            <li class="filter__sublist-item">
-                                <a href="#">Tanks</a>
-                            </li>
-                        </ul>
-                        <li class="filter__list-item">
-                            <a href="#">brand</a>
-                        </li>
-                        <li class="filter__list-item">
-                            <a href="#">designer</a>
-                        </li>
-                    </ul>
-                </nav>
-                
-                <div class="filter__box">
-                    <p class="filter__text">TRENDING NOW</p>
-                    <p class="filter__text">SIZE</p>
-                    <p class="filter__text">PRICE</p>
+        <section class="shop container">
+            <div class="shop__left">                
+                <div class="shop__box">
+                    <article class="shop__item">
+                        <img src="../img/ctang.png" alt="shop-photo" class="shop__photo">
+                        <div class="shop__descript">
+                            <div class="shop__title">
+                                <h3>MANGO PEOPLE</h3>
+                                <h3> T-SHIRT</h3>
+                            </div>
+                            <p class="shop__item-text">Price: <span>$300</span></p>
+                            <p class="shop__item-text">Color: Red</p>
+                            <p class="shop__item-text">Size: Xl</p>
+                            <p class="shop__item-text quantity">Quantity:</p>
+                        </div>
+                    </article>
+
+                    <article class="shop__item">
+                        <img src="../img/ctan2.png" alt="shop-photo" class="shop__photo">
+                        <div class="shop__descript">
+                            <div class="shop__title">
+                                <h3>MANGO PEOPLE</h3>
+                                <h3> T-SHIRT</h3>
+                            </div>
+                            <p class="shop__item-text">Price: <span>$300</span></p>
+                            <p class="shop__item-text">Color: Red</p>
+                            <p class="shop__item-text">Size: Xl</p>
+                            <p class="shop__item-text quantity">Quantity:</p>
+                        </div>
+                    </article>
+                    <div class="box__btn">
+                        <button>CLEAR SHOPPING CART</button>
+                        <button>CONTINUE SHOPPING</button>
+                    </div>
                 </div>
             </div>
-            
 
-            <div class="content__block">
-                <article class="content__item">
-                    <img src="img/Rectangle1copy.png" alt="content-photo" class="content__photo">
-                    <h4 class="content__item-title">ELLERY X M'O CAPSULE</h4>
-                    <p class="content__item-text">Known for her sculptural takes on&nbsp;traditional tailoring, Australian arbiter of&nbsp;cool Kym Ellery teams up&nbsp;with Moda Operandi.</p>
-                    <p class="price">$52.00</p>
-                </article>
-
-                <article class="content__item">
-                    <div class="ground">
-                        <img src="img/Layer2.png" alt="content-photo" class="content__photo ground">
-                    </div>
-                    <h4 class="content__item-title">ELLERY X M'O CAPSULE</h4>
-                    <p class="content__item-text">Known for her sculptural takes on&nbsp;traditional tailoring, Australian arbiter of&nbsp;cool Kym Ellery teams up&nbsp;with Moda Operandi.</p>
-                    <p class="price">$52.00</p>
-                </article>
-
-                <article class="content__item">
-                    <img src="img/Rectangle3copy.png" alt="content-photo" class="content__photo">
-                    <h4 class="content__item-title">ELLERY X M'O CAPSULE</h4>
-                    <p class="content__item-text">Known for her sculptural takes on&nbsp;traditional tailoring, Australian arbiter of&nbsp;cool Kym Ellery teams up&nbsp;with Moda Operandi.</p>
-                    <p class="price">$52.00</p>
-                </article>
-
-                <article class="content__item">
-                    <img src="img/Rectangle4copy.png" alt="content-photo" class="content__photo">
-                    <h4 class="content__item-title">ELLERY X M'O CAPSULE</h4>
-                    <p class="content__item-text">Known for her sculptural takes on&nbsp;traditional tailoring, Australian arbiter of&nbsp;cool Kym Ellery teams up&nbsp;with Moda Operandi.</p>
-                    <p class="price">$52.00</p>
-                </article>
-
-                <article class="content__item">
-                    <img src="img/Rect5.png" alt="content-photo" class="content__photo">
-                    <h4 class="content__item-title">ELLERY X M'O CAPSULE</h4>
-                    <p class="content__item-text">Known for her sculptural takes on&nbsp;traditional tailoring, Australian arbiter of&nbsp;cool Kym Ellery teams up&nbsp;with Moda Operandi.</p>
-                    <p class="price">$52.00</p>
-                </article>
-
-                <article class="content__item">
-                    <img src="img/Rect6.png" alt="content-photo" class="content__photo">
-                    <h4 class="content__item-title">ELLERY X M'O CAPSULE</h4>
-                    <p class="content__item-text">Known for her sculptural takes on&nbsp;traditional tailoring, Australian arbiter of&nbsp;cool Kym Ellery teams up&nbsp;with Moda Operandi.</p>
-                    <p class="price">$52.00</p>
-                </article>
-
-                <article class="content__item">
-                    <img src="img/Rect7.png" alt="content-photo" class="content__photo">
-                    <h4 class="content__item-title">ELLERY X M'O CAPSULE</h4>
-                    <p class="content__item-text">Known for her sculptural takes on&nbsp;traditional tailoring, Australian arbiter of&nbsp;cool Kym Ellery teams up&nbsp;with Moda Operandi.</p>
-                    <p class="price">$52.00</p>
-                </article>
-
-                <article class="content__item">
-                    <img src="img/Rect8.png" alt="content-photo" class="content__photo">
-                    <h4 class="content__item-title">ELLERY X M'O CAPSULE</h4>
-                    <p class="content__item-text">Known for her sculptural takes on&nbsp;traditional tailoring, Australian arbiter of&nbsp;cool Kym Ellery teams up&nbsp;with Moda Operandi.</p>
-                    <p class="price">$52.00</p>
-                </article>
-
-                <article class="content__item">
-                    <img src="img/Rect9.png" alt="content-photo" class="content__photo">
-                    <h4 class="content__item-title">ELLERY X M'O CAPSULE</h4>
-                    <p class="content__item-text">Known for her sculptural takes on&nbsp;traditional tailoring, Australian arbiter of&nbsp;cool Kym Ellery teams up&nbsp;with Moda Operandi.</p>
-                    <p class="price">$52.00</p>
-                </article>
-
-                
+            <div class="shop__right">
+                <form action="#" class="shop__form">
+                    <h3>SHIPPING ADRESS</h3>
+                    <input type="text" placeholder="Bangladesh">
+                    <input type="text" placeholder="State">
+                    <input type="text" placeholder="Postcode / Zip">  
+                    <button>GET A QUOTE</button> 
+                </form>
+                <div class="shop__total">
+                    <p class="shop__total-text">SUB TOTAL <span>$900</span></p>
+                    <h3 class="shop__total-title">GRAND TOTAL <span>$900</span></h3>
+                    <button>PROCEED TO CHECKOUT</button>
+                </div>
             </div>
         </section>
-
 
     </main>
 
