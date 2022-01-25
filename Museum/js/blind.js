@@ -39,7 +39,7 @@ function addText(id, text) {
     document.getElementById(id).innerHTML = text;
 }
 
-var text = generateText(["a", "f"], 10);
+var text = generateText(["a", "f", "s", "d"], 20);
 addText("text", text);
 
 function userAnswer() {

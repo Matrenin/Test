@@ -84,7 +84,7 @@ numberBtn.addEventListener("click", function() {
         var result = getRandomNumber(36);
         var array00 = fortuna(result);
         balance -= stavka;
-        newText("result", "Выпало число " + array00[0] + ", " + array00[1] +".\nВы загадали число: " + cifra + ", размер ставки равен " + stavka + " кредитов. ");
+        newText("result", "Выпало число " + array00[0] + ", " + array00[1] + ".\nВы загадали число: " + cifra + ", размер ставки равен " + stavka + " фишек.");
         if(cifra == result) {
             balance += stavka * 35;
             addText("result", "Сумма выигрыша составила " + stavka * 35 + " фишек.\n");
@@ -143,4 +143,3 @@ colorBtn.addEventListener("click", function() {
         addText("result", "Вы указали сумму превышающую текущее количество кредитов на балансе.\n");
     }
 });
-
