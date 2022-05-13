@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Checkout</title>
+</head>
+<body>
+    
+    <div id="app">
+        <header class="header">
+            <div class="header__box">
+                <a class="header__title" href="index.html">Интернет магазин</a>
+                <div class="cart">
+                    <filter-el></filter-el>
+                    <cart ref="cart"></cart>                                
+                </div>
+            </div>
+        </header>
+        <decor ref="deecor"></decor>
+        <!-- <div class="decor">
+            <div class="decor__item">
+                <div class="decor__item-left">
+                    <img src="#" alt="some img">
+                    <div class="decor-desc">
+                        <p>item.product_name</p>
+                        <p>product.price</p>
+                    </div>
+                </div>
+                <div class="decot__item-right">
+                    <button @click="$root.$refs.cart.remove(item)">-</button>
+                    <span>1</span>
+                    <button>+</button>
+                </div>
+            </div>
+        </div> -->
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="js/ProductsComl.js"></script>
+    <script src="js/CartComp.js"></script>
+    <script src="js/FormComp.js"></script>
+    <script src="js/DecorComp.js"></script>
+    <script src="js/main.js"></script>
+    
+
+</body>
+</html>
