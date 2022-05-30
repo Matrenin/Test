@@ -1,0 +1,8 @@
+[
+    {"id": 1, "title": "Куртка", "price": 50, "img": "img/content1.png"},
+    {"id": 2, "title": "Костюм", "price": 70, "img": "img/content2.png"},
+    {"id": 3, "title": "Худи", "price": 30, "img": "img/content3.png"},
+    {"id": 4, "title": "Брюки", "price": 20, "img": "img/content4.png"},
+    {"id": 5, "title": "Пиджак", "price": 100, "img": "img/content5.png"},
+    {"id": 6, "title": "Поло", "price": 40, "img": "img/content6.png"}
+]
