@@ -4,5 +4,8 @@
     {"id": 3, "title": "Худи", "price": 30, "img": "img/content3.png"},
     {"id": 4, "title": "Брюки", "price": 20, "img": "img/content4.png"},
     {"id": 5, "title": "Пиджак", "price": 100, "img": "img/content5.png"},
-    {"id": 6, "title": "Поло", "price": 40, "img": "img/content6.png"}
+    {"id": 6, "title": "Поло", "price": 40, "img": "img/content6.png"},
+    {"id": 7, "title": "Шорты", "price": 70, "img": "img/content7.png"},
+    {"id": 8, "title": "Кардиган", "price": 40, "img": "img/content8.png"},
+    {"id": 9, "title": "Кепка", "price": 50, "img": "img/content9.png"}
 ]
